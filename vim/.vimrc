@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+set nu
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -6,10 +7,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'https://github.com/ternjs/tern_for_vim.git'
+Plugin 'marijnh/tern_for_vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'kien/ctrlp'
+Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'https://github.com/kien/ctrlp.vim.git'
+"Plugin 'git://git.wincent.com/command-t.git'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
